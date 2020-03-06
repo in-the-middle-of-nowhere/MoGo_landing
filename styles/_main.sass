@@ -1,0 +1,67 @@
+.main
+    display: flex
+    flex-direction: column
+    max-width: 100vw
+    height: 100vh
+    background: url('../images/bg.jpg') no-repeat
+    background-size: cover
+    padding: 0 200px
+    color: #fff
+    overflow: hidden
+
+.header
+    display: flex
+    flex-direction: row
+    &__logo
+        font-size: 30px
+        margin-right: auto
+        font-family: Montserrat
+    &--nav
+        margin: auto 0 auto auto
+        &__link
+            outline: none
+            text-decoration: none
+            color: #fff
+            font-family: Montserrat
+            font-size: 14px
+            text-transform: uppercase
+            margin-left: 55px
+            &:hover
+                color: #fce38a
+
+.content
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: auto
+    &__title
+        margin: 0
+        font-family: 'Kaushan Script'
+        font-size: 72px
+        margin-bottom: 40px
+    &__text
+        margin: 0
+        font-family: Montserrat
+        font-size: 150px
+        line-height: 140px
+        text-align: center
+        position: relative
+        display: inline-block
+        &::after
+            display: block
+            position: absolute
+            content: ""
+            height: 3px
+            width: 60px
+            background-color: #fff
+            left: 46%
+            bottom: -70px
+    &__btn
+        margin-top: 130px
+        text-decoration: none
+        color: #fff
+        border: 2px solid #fff
+        padding: 15px 30px
+        font-size: 14px
+        text-transform: uppercase
+        font-family: Montserrat

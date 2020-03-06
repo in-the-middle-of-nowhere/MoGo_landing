@@ -1,0 +1,87 @@
+.members
+    display: flex
+    flex-direction: row
+    margin-bottom: 60px
+    margin-top: 60px
+
+.team-block
+    margin-right: 30px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &:last-child
+        margin-right: 0
+    &__name
+        margin: 30px 0 15px 0
+        font-size: 14px
+        font-family: Montserrat
+        color: #333333
+        text-transform: uppercase
+    &__job
+        margin: 0
+        font-size: 14px
+        font-family: Montserrat
+        color: #999999
+
+.team-wrapper
+    width: 380px
+    height: 470px
+    background-color: #95e1d3
+
+.member
+    display: flex
+    position: relative
+    width: 100%
+    height: 100%
+    &--hover
+        visibility: hidden
+        display: flex
+        flex-direction: row
+        align-items: center
+        position: absolute
+        left: 28%
+        top: 45%
+        &__link
+            background-color: #fce38a
+            width: 56px
+            height: 56px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-left: 1px solid#f38181
+            &:first-child
+                border-left: none
+    &__img
+        height: 100%
+        width: 100%
+    &:hover
+        background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%)
+        .member__img
+            opacity: 0.1
+        .member--hover
+            visibility: visible
+            z-index: 1
+
+#team-first
+    &:hover
+        margin-top: -10px
+        margin-left: -10px
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+#team-second
+    &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        transform: scale(1)
+
+#team-third
+    &:hover
+        margin-top: -10px
+        margin-left: 10px
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+.team
+    margin-bottom: 100px
+    &--images
+        padding: 50px 350px
+        background-color: #f8f8f8
